@@ -1,0 +1,8 @@
+{
+  "name": "CropGuard",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "features": { "ghcr.io/devcontainers/features/python:1": { "version": "3.11" } },
+  "postCreateCommand": "npm install && pip install -r ml/requirements.txt",
+  "forwardPorts": [3000, 8000],
+  "portsAttributes": { "3000": { "label": "CropGuard app", "onAutoForward": "openBrowser" } }
+}
